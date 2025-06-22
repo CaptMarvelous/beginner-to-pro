@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Page with Iframes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+    }
+
+    .header {
+      height: 20%;
+    }
+
+    .content {
+      height: 60%;
+    }
+
+    .footer {
+      height: 20%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <iframe class="header" src="header.html" title="Header"></iframe>
+    <iframe class="content" src="tutorials.html" title="Main Content"></iframe>
+    <iframe class="footer" src="footer.html" title="Footer"></iframe>
+  </div>
+</body>
+</html>
